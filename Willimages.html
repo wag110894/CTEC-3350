@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Gallery | Will</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <style>
+      body {
+        font-family: verdana, arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.2em;
+        color: #666666;
+      }
+      #gallery {
+        width: 100%;
+        position: relative;
+      }
+      #gallery ul {
+        width: 50%;
+        padding:1em;
+        margin: 1em;
+		list-style-type: none;
+		display: -webkit-box;
+        display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+        -webkit-flex-direction: row wrap;
+        justify-content: space-around;
+      }
+      #gallery ul li {
+      flex: 1 233px;
+      }
+	  #gallery ul li img {
+        max-width: 100%;
+        max-height: 155px;
+      }
+      #gallery ul li span {
+        display: none;
+      }
+      #gallery a:hover span {
+        width: 40%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+
+      }
+      #gallery a:hover span img {
+        max-height: 150%;
+
+	 }
+    </style>
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+    <div id="gallery">
+      <ul>
+        <li class="2">
+          <a href="\CTEC3350\Image Gallery\feet-hipster-longboard-skateboard.jpg"><img src="\CTEC3350\Image Gallery\feet-hipster-longboard-skateboard.jpg" alt="Skateboard" />
+            <span>
+              <img  src="\CTEC3350\Image Gallery\feet-hipster-longboard-skateboard.jpg"" alt="Skateboard" /><br />
+              Skateboard picture
+            </span>
+          </a>
+        </li >
+        <li class="3">
+          <a href="\CTEC3350\Image Gallery\pexels-photo-111295.jpeg"><img src="\CTEC3350\Image Gallery\pexels-photo-111295.jpeg">
+            <span>
+              <img  src="\CTEC3350\Image Gallery\pexels-photo-111295.jpeg" alt="Art" /><br />
+            Artwork
+            </span>
+          </a>
+        </li>
+        <li class="4">
+          <a href="\CTEC3350\Image Gallery\pexels-photo-175701.jpeg"><img src="\CTEC3350\Image Gallery\pexels-photo-175701.jpeg" alt="senior picture" />
+            <span>
+              <img src="\CTEC3350\Image Gallery\pexels-photo-175701.jpeg" alt="senior picture" /><br />
+            senior year
+            </span>
+          </a>
+        </li>
+        <li class="5">
+          <a href="\CTEC3350\Image Gallery\pexels-photo.jpg"><img src="\CTEC3350\Image Gallery\pexels-photo.jpg" alt="Girl with headphones" />
+            <span>
+              <img src="\CTEC3350\Image Gallery\pexels-photo.jpg" alt="Girl with headphones" /><br />
+              Girl w/ headphones
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
