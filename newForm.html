@@ -2,24 +2,39 @@
 <html>
  <head>
   <title> Form </title>
-
  </head>
+<style>
+.flex-item{
+display:-webkit-flex;
+-webkit-flex-direction:row;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:flex-start;
+padding:2px;
+text-align:auto;
+}
+.container{
+color:blue;
+padding:1px;
 
+}
+</style>
  <body>
 <form method="post">
-<h1> Form </h1>
-<div>
+<h1> <div class="container">Form </h1>
+<div class="flex-item">
 Username field:<input type="text" size="12" maxlength="12"></input>
 </div>
-<div>
-E-mail: <input type=“email” name=“email” id=“email”></input>
+<div class="flex-item">
+E-mail: <input type=â€œemailâ€ name=â€œemailâ€ id=â€œemailâ€></input>
 </div>
-<div>
+<div class="flex-item">
 Password:<input type="password" size="15"></input>
-<div>
+</div>
+<div class="flex-item">
 Confirm Password:<input type="password" size="15"></input>
 </div>
-<div>
+<div class="flex-item">
 Favorite Day of the Week <select name="Day">
 <option value=""></option>
 <option value="Sunday">Sunday</option>
@@ -30,21 +45,32 @@ Favorite Day of the Week <select name="Day">
 <option value="Friday">Friday</option>
 <option value="Saturday">Saturday</option>
  </select>
- </div><div>
+ </div>
+ <div class="flex-item">
  Types of Social Media you use: <input type="checkbox" name="Social Media" id="Facebook" value="Facebook">Facebook</input>
 <input type="checkbox" name="Social Media" id="Twitter" value="Twitter">Twitter</input>
 <input type="checkbox" name="Social Media" id="Instagram" value="Instagram">Instagram</input>
 <input type="checkbox" name="Social Media" id="" value="Facebook">Facebook</input>
- </div> <div><p>
+ </div> 
+ <div class="flex-item"><p>
 Mailing Information:
-</div><div>
+</div>
+<div class="flex-item">
 First Name:<input type="text" size="15"/>
-</div><div>
+</div>
+<div class="flex-item">
 Last Name: <input type="text" size="15">
 </div>
-Address:<input type="text" size="40"/></div><div>
+<div class="flex-item">
+Address:<input type="text" size="40"/>
+</div>
+<div class="flex-item">
 City: <input type="text" size="15">
+</div>
+<div class="flex-item">
 State: <input type="text" size="2">
+</div>
+<div class="flex-item">
 Zip: <input type="number" size="5">
 </div>
 <input type="submit" name="submit" id="submit" value="submit"> </input>
