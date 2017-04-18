@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Components </title>
+ <link rel="stylesheet" href="bemcss.css">
+  </head>
+   <style>
+      body {
+        font-family: verdana, arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.2em;
+        color: #666666;
+      }
+      #gallery {
+        width: 100%;
+        position: relative;
+      }
+      #gallery ul {
+        width: 50%;
+        padding:1em;
+        margin: 1em;
+		list-style-type: none;
+		display: -webkit-box;
+        display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+        -webkit-flex-direction: row ;
+        justify-content: space-around;
+      }
+      #gallery ul li {
+      flex: 1 233px;
+      }
+	  #gallery ul li img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      #gallery ul li span {
+        display: none;
+      }
+      #gallery a:hover span {
+        width: 40%;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        text-align: center;
+      }
+      #gallery a:hover span img {
+        max-height: 80%;
+	 }}
+	
+	
+
+.flex-item{  
+	width: 150px;
+    
+	height: 150px;
+    
+	margin: 10px;
+	
+}
+.text{color:blue;
+font-size:20px;
+position:absolute;
+top:20em;
+right:-15em;
+}
+    </style>
+  <body>
+
+          <header>
+            <div class="brand">
+              <img src="workingcoffee.png"  height=100px; /></a>
+            </div>
+            <div class="navigation">
+              <ul class="nav-bar">
+  
+                <li><a href="BEM.html">Back to BEM homepage</a></li>
+				<li><a href="wireframes.html">To Wireframes</a></li>
+              </ul>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 align="center";>Components</h1>
+          <h3>How to use this resource:</h3>
+          <ol>
+            <li>Navigate to the components you'd like to use</li>
+            <li>Copy the code in below the example./li>
+          </ol>
+          
+          <h2 class="imagegallery">Image Gallery</h2>
+          <p>This component is used on image gallery page to display images in a gallery. Pictures will be updated on a monthly basis.</p>
+          <h3>Classes</h3>
+          <ul>
+            <li>.imagegallery</li>
+            <li>.imagegallery-image
+              <ul>
+                <li>.imagegallery-images span</li>
+              </ul>
+            </li>
+            <li>h3.title</li>
+            <li>.description</li>
+          </ul>
+       
+    <h1>Image Gallery</h1>
+	<h2>Below is the coding used for the image gallery as well as an example of the image gallery. 
+    <div id="gallery">
+      <ul>
+        <li class="flex-item">
+		<a href="college.jpg"> <img  src="college.jpg" alt="College kids hanging out" height="150px;" />
+			 <span>
+				<img  src="college.jpg" alt="College kids hanging out"/><br />
+             College kids hanging out
+            </span>
+          </a>
+        </li >
+        <li class="flex-item">
+             <a href="band.jpg"> <img  src="band.jpg" alt="Picture of band playing music" height="150px;" />
+			 <span>
+				<img  src="band.jpg" alt="Picture of band"/><br />
+          Picture of band playing music
+            </span>
+          </a>
+        </li>
+        <li class="flex-item">
+		 <a href="poet.jpg"> <img  src="poet.jpg" alt="image of poet" height="150px;" />
+			 <span>
+				<img src="poet.jpg" alt="image of poet"/><br />
+          Picture of Poet
+            </span>
+          </a>
+        </li>
+        <li class="flex-item">
+          <a href="workingcoffee.png"><img src="workingcoffee.png" alt="picture of logo" height="150px;"/>
+            <span>
+              <img src="workingcoffee.png" alt="picture of logo" /><br />
+            Picture of coffee cup
+            </span>
+          </a>
+        </li>
+      </ul>
+  
+	<pre>
+	<code class="text">
+	    &lt;div id="gallery"&gt;
+      &lt;ul&gt;
+        &;t;li class="flex-item"&gt;
+		&lt;a href="collegestudentsatcoffeeshop.jpg"&gt; &lt;img  src="collegestudentsatcoffeeshop.jpg" alt="College kids hanging out" height="150px;" /&gt;
+			 &lt;span&gt;
+				&lt;img  src="collegestudentsatcoffeeshop.jpg" alt="College kids hanging out"/&gt;&lt;br /&gt;
+             College kids hanging out
+            &lt;/span&gt;
+          &lt;/a&gt;
+      &lt;/li&gt;
+        &lt;li class="flex-item"&gt;
+             &lt;a href=".png"&lt &lt;img  src=".png" alt="Picture of band playing music" height="75px;" /&gt;
+			 &lt;span&gt;
+				&lt;img  src=".png" alt="Picture of band playing music"/&gt;&lt;br /&gt;
+          Picture of band playing music
+            &lt;/span&gt;
+          &lt;/a&gt;
+		 &lt;/li&gt;
+        &lt;li class="flex-item"&gt;
+		 &lt;a href=".png"&gt; &lt;img  src=".png" alt="image of poet" height="150px;" /&gt;
+			 &lt;span&gt;
+				&lt;img  src=".png" alt="image of poet"/&gt;&lt;br /&gt;
+          Picture of Poet
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="flex-item"&gt;
+          &lt;a href="workingcoffee.png"&gt;&lt;img src="workingcoffee.png" alt="picture of logo" height="150px;"/&gt;
+            &lt;span&gt;
+              &lt;img src="workingcoffee.png" alt="picture of logo" /&gt;<br /&gt;
+            Picture of coffee cup
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt/div&gt;
+  &lt;/div&gt;
+    &lt;span&gt;
+ 
+
+
+
+  </body>
+</html>

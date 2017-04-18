@@ -1,0 +1,58 @@
+ .basic,.home
+ {font-style:sans-serif;font-size:24px; 
+ background-color:lightblue;
+ width:25px;
+ }
+ h1{
+ font-family:"Montserrat";font-size:30px;
+ border-bottom:10px solid blue;
+ color:black;
+}
+
+ .style,.calendar
+ {font-style:"serif";font-size:20px;
+ background-color:lightgrey;
+ }
+ 
+ .body,.menu,.jobs
+{font-Family:"Times New Roman";font-size:25px;
+background-color:orange;
+}
+.nav{
+font-Family:"Times New Roman";font-size:25px;
+background-color:lightgreen;
+}
+ .title 
+ {text-align:center; font-size:35px;
+ border-style:10px solid black;
+ }
+ 
+.navstyle{
+font-style:sans-serif;
+font-size:30px;
+text-decoration:underline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color:white;
+}
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.navstyle{
+    background-color:green;
+    color: white;
+}
+li a:hover:not(.navstyle) {
+    background-color:black;
+    color: white;
+}
+.home;.menu {background-color:blue; color:white;
+font-family:"times new roman";font-size:25px;
+}

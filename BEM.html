@@ -2,75 +2,33 @@
 <html lang="en">
  <head>
  <title>BEM Stylesheet</title>
+ <link rel="stylesheet" href="bemcss.css">
  </head>
  <style>
- .basic,.home
- {font-style:sans-serif;font-size:24px; 
- background-color:lightblue;
- width:25px;
- }
- h1{
- font-family:"Montserrat";font-size:30px;
- border-bottom:10px solid blue;
- }
- .style,.calendar
- {font-style:"serif";font-size:20px;
- background-color:lightgrey;
- }
- 
- .body,.menu,.jobs
-{font-Family:"Times New Roman";font-size:25px;
-background-color:orange;
-
-}
-.nav{
-font-Family:"Times New Roman";font-size:25px;
-background-color:lightgreen;
-}
- .title 
- {text-align:center; font-size:35px;
- border-style:10px solid black;
- }
- 
-.navstyle{
-font-style:sans-serif;
-font-size:30px;
-text-decoration:underline;
-
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color:white;
-}
-
-li a {
-    display: block;
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.navstyle{
-    background-color:green;
-    color: white;
-}
-
-li a:hover:not(.navstyle) {
-    background-color:black;
-    color: white;
-}
- 
  </style>
  <body>
- <div class="title">BEM Stylesheet</div>
- <h1>Below is Basic HTML Set Up coding.</h1>
+   <header>
+            <div class="brand">
+             <img src="workingcoffee.png"  height=100px; /></a>
+            </div>
+            <div class="navigation">
+              <ul class="nav-bar">
+				 <li><a href="wireframes.html">To Wireframes</a></li>
+                <li><a href="Components.html">To Components Section</a></li>
+            </ul>
+            </div>
+			</div>
+			</div>
+			</div>
+			<div class="container">
+			<div class="row">
+			<div class="col-md-8">
+			</header>  
+			<h1 align="center"> BEM Stylesheet</h1>
 
  <pre>
  <code class="basic">
-&lt;!DOCTYPE html&gt
+&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt; 
 &lt;title&gt;BEM Stylesheet&lt;/title&gt;
@@ -105,8 +63,28 @@ li a:hover:not(.navstyle) {
 .title 
  {text-align:center; font-size:35px;
  }
+ 
 &lt;/style&gt;
+ &lt;div class="Headers"&gt; 
 
+<table class="table">
+                <tr>
+                  <td><h1>h1. Heading</h1></td>
+                  <td>size 30px;</td>
+                </tr>
+                <tr>
+                  <td><h2>h2. Heading</h2></td>
+                  <td>size 25px; </td>
+                </tr>
+                <tr>
+                  <td><h3>h3. Heading</h3></td>
+                  <td>size 20px;</td>
+                </tr>
+                <tr>
+                  <td><h4>h4. Heading</h4></td>
+                  <td>size 15px;</td>
+                </tr>
+              </table
 </pre>
 </code>
 <h1> Below is coding for navigation. </h1>
@@ -149,10 +127,62 @@ li a:hover:not(.nav) {
 <h1>Below is an example of what the body text will look like.</h1>
 <pre>
 <code class="body">
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+In fringilla placerat tortor, molestie ultricies risus consequat sit amet.
+Fusce non sapien et libero facilisis commodo. 
+Pellentesque id massa odio. 
+Cras iaculis, tellus quis facilisis fermentum, tellus orci mollis dui, nec tempus tortor nulla at purus. 
+Phasellus imperdiet vitae diam et bibendum. Nam in sem eu lectus euismod ullamcorper. 
+Vestibulum varius mollis erat sed volutpat. 
 </pre>
 </code>
-</body>
+<pre>
+<code class="list">
+ <h2>Lists</h2>
+            <h3>Ordered List</h3>
+            <div class="sample">
+              <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Phasellus lacinia dui id lacus scelerisque maximus.</li>
+                <li>Duis porttitor turpis eget eros accumsan aliquet.
+                  <ol>
+                    <li>Quisque pellentesque lacus sit amet ex volutpat venenatis.</li>
+                    <li>Sed ornare velit vitae sem mollis molestie.</li>
+                  </ol>
+                </li>
+                <li>Aenean quis nibh rutrum, hendrerit nunc sit amet, condimentum dui.</li>
+              </ol>
+              <pre>
+            <code>
 
+
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+            <h3>Unordered List</h3>
+        
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Phasellus lacinia dui id lacus scelerisque maximus.</li>
+                <li>Duis porttitor turpis eget eros accumsan aliquet.
+            
+                    <li>Quisque pellentesque lacus sit amet ex volutpat venenatis.</li>
+                    <li>Sed ornare velit vitae sem mollis molestie.</li>
+            
+                </li>
+                <li>Aenean quis nibh rutrum, hendrerit nunc sit amet, condimentum dui.</li>
+             
+              <pre>
+            <code>
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+            </pre>
+            </div>
+          
+</body>
 </html>
